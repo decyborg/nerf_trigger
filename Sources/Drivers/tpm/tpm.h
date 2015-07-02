@@ -29,6 +29,22 @@
 #define TPM_IC_FALLING		TPM_CnSC_ELSB_MASK
 #define TPM_IC_BOTH			TPM_CnSC_ELSA_MASK|TPM_CnSC_ELSB_MASK
 
+#define TPM_OC_TOGGLE	TPM_CnSC_MSA_MASK|TPM_CnSC_ELSA_MASK
+#define TPM_OC_CLR		TPM_CnSC_MSA_MASK|TPM_CnSC_ELSB_MASK
+#define TPM_OC_SET		TPM_CnSC_MSA_MASK|TPM_CnSC_ELSA_MASK|TPM_CnSC_ELSB_MASK
+#define TPM_OC_OUTL		TPM_CnSC_MSB_MASK|TPM_CnSC_MSA_MASK|TPM_CnSC_ELSB_MASK
+#define TPM_OC_OUTH		TPM_CnSC_MSB_MASK|TPM_CnSC_MSA_MASK|TPM_CnSC_ELSA_MASK
+
+#define TPM_PWM_H 		TPM_CnSC_MSB_MASK|TPM_CnSC_ELSB_MASK
+#define TPM_PWM_L		TPM_CnSC_MSB_MASK|TPM_CnSC_ELSA_MASK
+
+#define EDGE_PWM		0
+#define CENTER_PWM		1
+
+extern void TPM_init_PWM(TPM_MemMapPtr TPMx, int  clock_source, int module, int clock_mode, int ps, int counting_mode);
+extern void TPM_CH_init_PWM(TPM_MemMapPtr TPMx, int channel, int mode);
+extern void set_TPM_CnV(TPM_MemMapPtr TPMx, int channel, int value);
+
 
 extern int TPM_init_IC(TPM_MemMapPtr TPMx, int  clock_source, int modulo, int clock_mode, int ps);
 extern void TPM_CLK_MODE (TPM_MemMapPtr TPMx, int clock_mode);
