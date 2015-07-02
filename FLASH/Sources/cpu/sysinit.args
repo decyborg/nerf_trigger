@@ -1,0 +1,27 @@
+-mcpu=cortex-m0
+-mthumb
+-mfloat-abi=soft
+-g3
+-gdwarf-2
+-gstrict-dwarf
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Project_Headers"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources/Common"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources/cpu"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources/Drivers"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources/HC-SR04"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources/Drivers/gpio"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources/Drivers/mcg"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources/Drivers/uart"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources/Drivers/tpm"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Sources/Drivers/lptmr"
+-I"C:/Users/Manuel Alejandro/Downloads/FRDM-KL25Z-TPM-IC/Project_Settings/Startup_Code"
+-I"C:/Freescale/CW MCU v10.6/MCU/ARM_GCC_Support/ewl/EWL_C/include"
+-I"C:/Freescale/CW MCU v10.6/MCU/ARM_GCC_Support/ewl/EWL_Runtime/include"
+-O0
+-ffunction-sections
+-fdata-sections
+-Wall
+-c
+-fmessage-length=0
+-specs=ewl_c_noio.specs
